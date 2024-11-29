@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form method="">
+        <option value="">Name</option>
+        <input type="text">
+        <button type="submit" onclick="mybutton" id="mybtn">Submit</button>
+    </form> -->
+    <script>
+            // document.getElementById('mybtn').addEventListener('click',function(){
+            //     console.log('clicked was clicked');
+            // });
+            
+            // setTimeout(function() {
+            //         console.log('this msg is shown after 2 second');
+            // }, 2000);
+        
+            
+        
+        
+
+
+        // let n=prompt('enter the number')
+        // sum=0
+        // for(i=0;i<=n;i++){
+        //     sum=sum+i
+        // }
+        // console.log(sum);
+
+// ********************** Through function ***********************
+        // function sum(n){
+        //     sum=0
+        //     for(i=0;i<=n;i++){
+        //         sum=sum+i 
+        //     } 
+        //     return sum
+        // }
+        // res=sum(prompt('enter the number'))
+        // console.log(sum);
+
+        // function display(value){
+        //     console.log(value)
+        // }
+
+        // function addition(a,b,z){
+        //     const c=a+b
+        //     z(c)
+        // }
+        // addition(10,20,display)
+
+// ********************** String value with callback function *****************************
+
+        function fullName(fname,lname,callback){
+            let name=fname+" "+lname
+            callback(name)
+            return name
+        }
+        // res=fullName('Shubham','Sharma')
+        // console.log(res);
+        fullName('Shubham','V',display)
+        
+
+        function display(value){
+            console.log(`this is my name ${value}`);
+        }
+
+    </script>
+</body>
+</html>

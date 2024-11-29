@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-heading{
+            background-color: red;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .click-me-button{
+            background-color: rgb(183, 35, 35);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 2px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="my-heading js-my-heading">Welcome to pune</h1> 
+    <button class="click-me-button js-click-me-button" onclick='display()'> SUBSCRIBE</button>
+    <p>Welcome to Javascript</p>
+    <p>Welcome to hello world</p>
+    <p>Welcome to Javascript</p>
+    <button onclick="add()">add</button>
+
+    <script>
+        function display(){
+            alert('welcome')
+        }
+
+        function add(){
+            let a=10;
+            let b=20;
+            c=a+b;
+            alert(c);
+            console.log(c);
+        }
+    </script>
+    
+</body>
+</html>
